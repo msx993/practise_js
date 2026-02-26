@@ -57,4 +57,3 @@ console.log(modHours);
 console.log(hours);
 console.log(minues);
 console.log(`${modHours}: ${modMinutes}`);
-
