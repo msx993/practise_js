@@ -64,19 +64,73 @@
 // ["apple", "plum", "pear"], "pEAr" повертає "pear is available to order!"
 // ["apple", "plum", "pear"], "orange" повертає "Sorry! We are out of stock!"
 
-const storage = ["apple", "plum", "pear"];
-const item = "plum";
-const convertedItem = item.toLowerCase;
-if (storage.includes("plum")) {
-    console.log("is available to order!");
-} else {
-    console.log("Sorry! We are out of stock!");
+// const storage = ["apple", "plum", "pear"];
+// const item = "plum";
+// const convertedItem = item.toLowerCase;
+// if (storage.includes("plum")) {
+//     console.log("is available to order!");
+// } else {
+//     console.log("Sorry! We are out of stock!");
     
-}
-storage.push("banana")
+// }
+// storage.push("banana")
 
-// const isIncluded = ;
-let answer;
+// // const isIncluded = ;
+// let answer;
 
 
-// console.log(answer);
+
+// 3
+// array - масив довільних елементів
+// value - значення елемента масиву для пошуку
+// Доповни код так, 
+// щоб виконувати пошук значення value у масиві array 
+// і повертати:
+
+//  - порожній масив, якщо в array немає елемента зі значенням value
+//  - підмасив, що починається з початку array 
+//    і до елемента зі значенням value включно, якщо такий елемент є в array
+
+// ["Mango", "Poly", "Ajax"], "Poly" повертає ["Mango", "Poly"]
+// ["Mango", "Poly", "Ajax"], "Jacob" повертає []
+
+
+// const array = ["Mango", "Poly", "Ajax"];
+// const value = "Poly";
+// let arr = [];
+
+// const elemIndex = array.indexOf(value);
+// if (elemIndex !== -1) {
+//   arr = array.slice(0, elemIndex + 1);
+// }
+
+// console.log(arr);
+
+// console.log(elemIndex);
+
+// const languages = ["C", "C++", "Java", "JavaScript"];
+// languages.splice(1,2 'swift', 'go')
+// console.log(languages);
+
+// const colors = ["red", "green", "blue"];
+// colors.splice(2,0,'yellow')
+// console.log(colors);
+
+// const colors2 = ["red", "green", "blue"];
+// colors2.splice(2,1, 'purple')
+// console.log(colors2);
+
+
+
+// Додайте 'Рок-н-ролл' в кінець масиву. 
+// Замініть значення в середині масиву на 'Класика'. 
+// Видаліть перший елемент масиву і покажіть його. 
+// Додайте 'Реп' і 'Реггі' на початок масиву. 
+// Виведіть масив в консоль.
+const styles = ['Джаз', 'Блюз'];
+styles.splice(1,0, 'Рок-н-ролл')
+styles.splice(0,0, 'Класика')
+styles.splice(-1,1)
+styles.splice(0,0, 'Реп')
+styles.splice(0,0, 'Реггі')
+console.log(styles);
