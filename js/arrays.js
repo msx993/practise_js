@@ -66,7 +66,7 @@
 
 const storage = ["apple", "plum", "pear"];
 const item = "plum";
-const convertedItem = item.toLocaleLowerCase;
+const convertedItem = item.toLowerCase;
 if (storage.includes("plum")) {
     console.log("is available to order!");
 } else {
