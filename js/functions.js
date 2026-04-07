@@ -81,10 +81,10 @@ taxRate - число, податкова ставка. Необов'язкови
 // якщо немає  "Sorry! We are out of stock!";
 
 
-const checkStorge = function (array, item) {
-    if (Array.includes(ClipboardItem.toLowerCase())) {
-        return `${item} is available to order!`
-    }
-    return "Sorry! We are out of stock!"
-}
-checkStorage(["apple", "plum", "pear"], "pLuM")
+// const checkStorge = function (array, item) {
+//     if (Array.includes(ClipboardItem.toLowerCase())) {
+//         return `${item} is available to order!`
+//     }
+//     return "Sorry! We are out of stock!"
+// }
+// checkStorage(["apple", "plum", "pear"], "pLuM")
