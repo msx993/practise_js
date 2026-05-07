@@ -1,6 +1,4 @@
 
-
-
 // const area = 60
 // const rooms = 3
 // const key = "location"
@@ -17,7 +15,6 @@
 //     country: "Spain",
 //     city: "Majorka",
 // },
-
 
 
 
@@ -53,21 +50,16 @@
 // apartment.tags.push("trusted")
 
 
-
 // // const keys = Object.keys (apartment)
 // // const values = Object.values (apartment)
 // // console.log(keys);
 // // console.log(values);
 
 
-
 // apartment.ownerName = "Henry"
 // apartment.ownerPhone = "892-167-1488"
 // apartment.ownerEmail = "henry.carter@aptmail.com"
 // apartment.tags.push("trusted")
-
-
-
 
 // // 
 // // 
@@ -107,9 +99,6 @@
 // }
 
 
-
-
-
 // // 1
 // const lastWeekTemps = [14, 25, 11];
 // const currentWeekTemps = [23, 17, 18];
@@ -130,11 +119,6 @@
 // console.log(worstScore);
 
 
-
-
-
-
-
 // 3
 // Функція getExtremeScores(scores) 
 // приймає масив оцінок (чисел) у параметрі scores.
@@ -142,16 +126,81 @@
 // Властивість best має містити найбільше число з масиву scores
 // Властивість worst має містити найменше число з масиву scores.
 // Використовуй оператор (...spread) і методи Math.max() і Math.min().
-const getExtremeScores = function (array) {
-    let best = Math.max(...array);
-    let worst = Math.min(...array);
-    console.log(best);
-    console.log(worst);                                                     
-    return {
-        best,
-        worst,
-    }
-}
-getExtremeScores([89, 64, 42, 17, 93, 51, 26]) //{ best: 93, worst: 17 }
-getExtremeScores([19, 7, 4, 17, 81, 24]) //{ best: 81, worst: 4 }
+// const getExtremeScores = function (array) {
+//     let best = Math.max(...array);
+//     let worst = Math.min(...array);
+//     console.log(best);
+//     console.log(worst);                                                     
+//     return {
+//         best,
+//         worst,
+//     }
+// }
+// getExtremeScores([89, 64, 42, 17, 93, 51, 26]) //{ best: 93, worst: 17 }
+// getExtremeScores([19, 7, 4, 17, 81, 24]) //{ best: 81, worst: 4 }
 
+
+
+
+
+
+
+
+
+// const car = {
+//   make: 'Toyota',
+//   model: 'Camry',
+//   year: 2020,
+//   features: ['power windows', 'rear camera', 'navigation'],
+//   safety: {
+//     airbags: true,  
+//     antilock_brakes: true,
+//     stability_control: true
+//   }
+// }
+// const {make, model: carmodel, year, features = [], safety: {airbags, antilock_brakes, stability_control}} = car
+// console.log(make, carmodel, year, features, airbags, antilock_brakes, stability_control);
+
+
+
+
+// // Об’єкт movie
+// const movie = {
+//   title: 'The Shawshank Redemption',
+//   director: {
+//     name: 'Frank Darabont',
+//     nationality: 'American'
+//   },
+//   actors: ['Tim Robbins', 'Morgan Freeman'],
+//   release_year: 1994,
+//   ratings: {
+//     imdb: 9.3,
+//     rotten_tomatoes: 90
+//   }
+// }
+
+// const {title, director: {name: directorname, nationality: directornationality}, actors, release_year, ratings} = movie
+// console.log(title, director: {name: directorname, nationality: directornationality}, actors, release_year, ratings;
+
+
+// Об’єкт books
+const books = {
+  count: 3,
+  list: [
+    {
+      title: 'The Great Gatsby',
+      author: 'F. Scott Fitzgerald',
+      year: 1925
+    },
+    {
+      title: 'To Kill a Mockingbird',
+      author: 'Harper Lee',
+      year: 1960
+    },
+    {
+      title: '1984',
+      author: 'George Orwell',
+      year: 1949
+    }
+  ]
+} 
