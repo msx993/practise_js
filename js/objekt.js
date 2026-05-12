@@ -184,23 +184,105 @@
 
 
 // Об’єкт books
-const books = {
-  count: 3,
-  list: [
-    {
-      title: 'The Great Gatsby',
-      author: 'F. Scott Fitzgerald',
-      year: 1925
-    },
-    {
-      title: 'To Kill a Mockingbird',
-      author: 'Harper Lee',
-      year: 1960
-    },
-    {
-      title: '1984',
-      author: 'George Orwell',
-      year: 1949
-    }
-  ]
-} 
+// const books = {
+//   count: 3,
+//   list: [
+//     {
+//       title: 'The Great Gatsby',
+//       author: 'F. Scott Fitzgerald',
+//       year: 1925
+//     },
+//     {
+//       title: 'To Kill a Mockingbird',
+//       author: 'Harper Lee',
+//       year: 1960
+//     },
+//     {
+//       title: '1984',
+//       author: 'George Orwell',
+//       year: 1949
+//     }
+//   ]
+// } 
+
+
+
+
+// Об’єкт movie
+// const movie = {
+//   title: 'The Shawshank Redemption',
+//   director: {
+//     name: 'Frank Darabont',
+//     nationality: 'American'
+//   },
+//   actors: ['Tim Robbins', 'Morgan Freeman'],
+//   release_year: 1994,
+//   ratings: {
+//     imdb: 9.3,
+//     rotten_tomatoes: 90
+//   }
+// }
+
+// const {actor[actor1, actor2]} = movie
+// const[actor1, actor2] = movie.actors
+
+
+
+
+
+
+
+
+// Напишіть функцію, яка отримує об'єкт 
+// з ім'ям, прізвищем та віком та використовує 
+// деструктуризацію для повернення рядка, 
+// що містить інформацію про цю людину в такому форматі:
+//  "Мене звати Ім'я Прізвище і мені Вік років".
+
+
+
+
+// const personinfo = function (obj) {
+  
+// console.log(obj);
+// const [name, lastName, age] = obj
+// return `мене звати ${name}, призвіще ${lastName}, і мені ${age}`
+// }
+
+
+// obj({name: "Max", lastName: "iv", age: 14});
+
+
+
+
+
+
+
+
+
+
+// Працюємо з колекцією товарів в кошику:
+// Написати методи вказані нижче в коді
+// { name: '🍎', price: 50 }
+// { name: '🍇', price: 70 }
+// { name: '🍋', price: 60 }
+// { name: '🍓', price: 110 }
+const cart = {
+  items: [],
+  getItems() {
+    return this.items
+  },
+  add(product) {
+    this.items.push(product)
+    return `${product.name}`
+  },
+  remove(productName) {},
+  clear() {},
+  countTotalPrice() {},
+  increaseQuantity(productName) {},
+  decreaseQuantity(productName) {},
+};
+// console.log(cart.add({ name: '🍎', price: 50 }));
+// console.log(cart.add({ name: '🍇', price: 70 }));
+// console.log(cart.add({ name: '🍋', price: 60 }));
+// console.log(cart.add({ name: '🍓', price: 110 }));
